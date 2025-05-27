@@ -1,0 +1,37 @@
+@import "./assets/styles/font.css";
+@import "tailwindcss";
+
+:root {
+  --c-text-primary: #141d22;
+  --c-text-secondary: #EDF0F2;
+  --c-text-gray-light: #8E9091;
+  --c-text-gray-dark: #0C1114;
+  --t-html-font-size: 16px;
+  --f-default: sans-serif;
+}
+
+
+
+@layer base {
+  html {
+    --f-country-heading-family: var(--f-default);
+    --f-country-simple-family: var(--f-default);
+    font-size: var(--t-html-font-size);
+  }
+
+  body {
+    font-family: var(--f-country-simple-family);
+    color: var(--c-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@theme {
+    --font-grotesk: 'aktiv-grotesk', sans-serif;e
+    --font-poppins: 'Poppins', sans-serif;
+}
