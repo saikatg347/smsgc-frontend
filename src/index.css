@@ -1,4 +1,54 @@
-@import "./styles/font.css";
+@font-face {
+  font-family: aktiv-grotesk;
+  src: url("./assets/fonts/AktivGrotesk-Regular.woff2") format("woff2");
+  font-display: fallback;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: aktiv-grotesk;
+  src: url("./assets/fonts/AktivGrotesk-Medium.woff2") format("woff2");
+  font-display: fallback;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: aktiv-grotesk;
+  src: url("./assets/fonts/AktivGrotesk-SemiBold.woff2") format("woff2");
+  font-display: fallback;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/poppins-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/poppins-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/poppins-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "tailwindcss";
 
 :root {

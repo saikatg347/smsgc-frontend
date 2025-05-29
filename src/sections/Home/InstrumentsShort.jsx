@@ -48,8 +48,8 @@ const rowData = [
   },
   {
     ins: {
-      img: "./assets/images/AAPL.png",
-      title: "AAPL",
+      img: "./assets/images/APPL.png",
+      title: "APPL",
       text: "Apple Inc.",
     },
     lev: "1:20",
