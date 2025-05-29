@@ -6,7 +6,7 @@ const features = [
     text: "1 million+ active traders",
   },
   {
-    img: '/assets/images/license.svg',
+    img: './assets/images/license.svg',
     text: "Multiple regulatory licenses",
   },
   {
@@ -64,7 +64,7 @@ function HeaderHome() {
         <div className="w-full md:w-[85%] px-6 py-6 lg:py-10 mx-auto grid sm:place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 border-t border-[#141d221f]">
           {features.map((item, index) => (
             <div key={index} className="flex items-center gap-2">
-              <img src={item.img} alt={item.text} />
+              <img src={item.img} />
               <p className="font-grotesk md:text-lg">{item.text}</p>
             </div>
           ))}
