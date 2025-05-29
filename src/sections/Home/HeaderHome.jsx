@@ -1,26 +1,20 @@
-import HeroVideoImage from "../../assets/images/hero-video-image.jpg";
-import HeroVideo from "../../assets/images/hero-video.webm";
 import Button from "../../components/Button";
-import UsersGroup from "../../assets/images/users-group.svg";
-import License from "../../assets/images/license.svg";
-import CustomSupport from "../../assets/images/custom-support.svg";
-import Certificate from "../../assets/images/certificate.svg";
 
 const features = [
   {
-    img: UsersGroup,
+    img: './assets/images/users-group.svg',
     text: "1 million+ active traders",
   },
   {
-    img: License,
+    img: '/assets/images/license.svg',
     text: "Multiple regulatory licenses",
   },
   {
-    img: CustomSupport,
+    img: './assets/images/custom-support.svg',
     text: "24/7 customer support",
   },
   {
-    img: Certificate,
+    img: './assets/images/certificate.svg',
     text: "PCI DSS certified",
   },
 ];
@@ -30,13 +24,13 @@ function HeaderHome() {
     <section className="pt-20 text-primary-text">
       <div className="relative w-full h-[70vh] overflow-hidden">
         <img
-          src={HeroVideoImage}
+          src='./assets/images/hero-video-image'
           className="block lg:hidden w-full h-full object-cover absolute inset-0"
           alt="Hero Fallback"
         />
 
         <video
-          src={HeroVideo}
+          src='./assets/images/hero-video.webm'
           autoPlay
           loop
           muted

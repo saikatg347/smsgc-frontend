@@ -1,4 +1,4 @@
-@import "./assets/styles/font.css";
+@import "./styles/font.css";
 @import "tailwindcss";
 
 :root {
@@ -38,9 +38,9 @@
   .feature-grid {
     display: grid;
     grid-template-areas:
-    "left"
-    "middle"
-    "right";
+      "left"
+      "middle"
+      "right";
     grid-template-columns: 1fr;
     place-content: center;
   }
@@ -72,6 +72,57 @@
   .feature-area-right {
     grid-area: right;
   }
+
+  .feature-grid2-left,
+  .feature-grid2-right {
+    display: grid;
+    grid-template-areas:
+      "left"
+      "middle"
+      "right";
+    grid-template-columns: 1fr;
+    place-content: center;
+  }
+
+  @media (min-width: 765px) {
+    .feature-grid2-left {
+      grid-template-areas:
+        "middle left"
+        "middle right";
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-grid2-right {
+      grid-template-areas:
+        "left middle"
+        "right middle";
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .feature-grid2-left-al {
+    grid-area: left;
+  }
+
+  .feature-grid2-left-am {
+    grid-area: middle;
+  }
+
+  .feature-grid2-left-ar {
+    grid-area: right;
+  }
+
+  .feature-grid2-right-al {
+    grid-area: left;
+  }
+
+  .feature-grid2-right-am {
+    grid-area: middle;
+  }
+
+  .feature-grid2-right-ar {
+    grid-area: right;
+  }
 }
 
 @theme {
@@ -85,6 +136,7 @@
   --breakpoint-2xl: 1400px;
 
   --color-primary-text: #141d22;
+  --color-primary-text-g: #141d2299;
   --color-secondary-text: #edf0f2;
   --color-secondary-text-g: #edf0f299;
 }

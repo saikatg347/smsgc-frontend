@@ -1,5 +1,3 @@
-import Phone from "../../assets/images/phone.jpg";
-
 const leftFeatures = [
   {
     icon: "Withdrawals",
@@ -52,8 +50,8 @@ function FeaturesBanner() {
 
         <div className="feature-grid ">
           <div className="feature-area-left  flex flex-col items-center justify-between gap-5 p-4">
-            {leftFeatures.map((item, index) => (
-              <div className="flex flex-col justify-center items-center text-center text-white gap-2">
+            {leftFeatures.map((item, ind) => (
+              <div key={ind} className="flex flex-col justify-center items-center text-center text-white gap-2">
                 <span className="bg-[#6C8595] rounded-2xl px-2 py-1 leading-4 font-grotesk text-xs mb-3">
                   {item.icon}
                 </span>
@@ -66,12 +64,12 @@ function FeaturesBanner() {
           </div>
           
           <div className="feature-area-middle flex items-center justify-center p-16 md:p-0">
-            <img src={Phone} className="w-[270px] h-auto lg:w-[400px] object-cover" />
+            <img src='./assets/images/phone.jpg' className="w-[270px] h-auto lg:w-[400px] object-cover" />
           </div>
 
           <div className="feature-area-right  flex flex-col items-center justify-between gap-5 p-4">
-            {rightFeatures.map((item, index) => (
-              <div className="flex flex-col justify-center items-center text-center text-white gap-2">
+            {rightFeatures.map((item, ind) => (
+              <div key={ind} className="flex flex-col justify-center items-center text-center text-white gap-2">
                 <span className="bg-[#6C8595] rounded-2xl px-2 py-1 leading-4 font-grotesk text-xs mb-3">
                   {item.icon}
                 </span>
