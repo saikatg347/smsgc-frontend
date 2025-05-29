@@ -24,7 +24,7 @@ function HeaderHome() {
     <section className="pt-20 text-primary-text">
       <div className="relative w-full h-[70vh] overflow-hidden">
         <img
-          src='./assets/images/hero-video-image'
+          src='./assets/images/hero-video-image.jpg'
           className="block lg:hidden w-full h-full object-cover absolute inset-0"
           alt="Hero Fallback"
         />
