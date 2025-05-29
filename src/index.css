@@ -3,14 +3,13 @@
 
 :root {
   --c-text-primary: #141d22;
-  --c-text-secondary: #EDF0F2;
-  --c-text-gray-light: #8E9091;
-  --c-text-gray-dark: #0C1114;
+  --c-text-secondary: #edf0f2;
+  --c-text-secondary-gray: #edf0f299;
+  --c-text-gray-light: #8e9091;
+  --c-text-gray-dark: #0c1114;
   --t-html-font-size: 16px;
   --f-default: sans-serif;
 }
-
-
 
 @layer base {
   html {
@@ -28,10 +27,64 @@
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+    letter-spacing: 0.5px;
+  }
+
+  li,
+  a {
+    @apply hover:cursor-pointer hover:text-[#141d2299];
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-areas:
+    "left"
+    "middle"
+    "right";
+    grid-template-columns: 1fr;
+    place-content: center;
+  }
+
+  @media (min-width: 575px) {
+    .feature-grid {
+      grid-template-areas:
+        "middle middle"
+        "left right";
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 765px) {
+    .feature-grid {
+      grid-template-areas: "left middle right";
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .feature-area-left {
+    grid-area: left;
+  }
+
+  .feature-area-middle {
+    grid-area: middle;
+  }
+
+  .feature-area-right {
+    grid-area: right;
   }
 }
 
 @theme {
-    --font-grotesk: 'aktiv-grotesk', sans-serif;
-    --font-poppins: 'Poppins', sans-serif;
+  --font-grotesk: "aktiv-grotesk", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  --breakpoint-sm: 575px;
+  --breakpoint-md: 765px;
+  --breakpoint-lg: 990px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+
+  --color-primary-text: #141d22;
+  --color-secondary-text: #edf0f2;
+  --color-secondary-text-g: #edf0f299;
 }
